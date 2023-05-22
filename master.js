@@ -6,6 +6,12 @@ function nightDayHandler(self){
         self.value = 'night';
         document.querySelector('#night_day_1').value = 'night';
         document.querySelector('#night_day_2').value = 'night';
+        var alist = document.querySelectorAll('a');
+        var i = 0;
+        while (i < alist.length) {
+            alist[i].style.color = 'black';
+            i = i + 1;
+        }
     } 
     else {
         target.style.backgroundColor = 'black';
